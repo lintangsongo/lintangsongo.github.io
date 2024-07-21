@@ -77,6 +77,32 @@ background-image: linear-gradient(to right, #e40303, #ff8c00, #ffed00, #008026, 
 background-clip: text;
 color: transparent;
 }
+.lintangsongo {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.footer-content-right {
+  padding-right:40px;
+  margin-top:20px;
+  float:right;
+}
+
+.icon-style {
+  height:40px;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+.icon-style:hover {
+  background-color:yellow;
+  padding:5px;
+}
 </style>
 <link
   rel="stylesheet"
@@ -84,10 +110,12 @@ color: transparent;
 />
 </head>
 <body>
-
+<div class="lintangsongo">
 <center>
+<a href="index.html">
 <img src="ico.png " alt="lintangsongo" class="rounded-circle" style="width: 100px; height: auto;">
-</center>
+</a>
+</center></div>
 <div>
 <center>
 <h class="animate__animated animate__flash">
@@ -105,16 +133,17 @@ color: transparent;
 </h>
 </center>
 </div>
-<div>
+
+<div class="lintangsongo">
 <center>
-<h class="animate__animated animate__slideInLeft__delay-2s">
+<h class="animate__animated animate__slideInLeft">
 
 <span class="multicolortext" >
     اللهم صل علي سيدنا محمدن النبي امي وعلي أله وصحبه وسلم
 </span>
 </center>
 <center>
-<h class="animate__animated animate__zoomIn__delay-3s">
+<h class="animate__animated animate__zoomIn">
 
 <span>
 
@@ -123,6 +152,7 @@ color: transparent;
 جَمْعِيَّةِ نَهْضَةِ العُلَمَاءِ
 
 </span></h></center>
+</h></div>
 
 <center>
 <span class='mew'> 
@@ -136,9 +166,8 @@ color: transparent;
 </center>
 </h></div>
 <center>
-<footer>
-<h class="animate__animated animate__rotateInUpLeft__delay-5s">
-
+<div class="footer-content-right">
+<h class="animate__animated animate__rotateInUpLeft">
 <span class="multicolortext" >
 LINTANG SONGO
 </span>
