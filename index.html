@@ -140,12 +140,22 @@ background-clip: text;
 color: transparent;
 }
 .lintangsongo {
-animation: blinker 1s linear infinite;
+animation: caret 1s linear infinite;
 }
 
 @keyframes blinker {
 50% {
 opacity: 0;
+}
+}
+
+@keyframes caret {
+0%,
+100% {
+opacity: 0;
+}
+50% {
+opacity: 1;
 }
 }
 
@@ -203,10 +213,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <center>
 <h class="animate__animated animate__slideInLeft">
 
-<span class="multicolortext text-1">
+<span class="multicolortext , lintangsongo">
 اللهم صل علي سيدنا محمدن النبي امي وعلي أله وصحبه وسلم
 </span>
-<span class="text-2">
+<span class="lintangsongo">
 
 اَ لسَّلَامُ عَلَيْكُمْ وَرَحْمَۃُ اللهِ وَبَرَكَا تُهُ .اَلْحَمْدُ لِلّٰهِ رَبِّ اْلعَالَمِيْنَ وَالصَّلَاۃُ وَالسَّلَامُ عَلَی سَيِّدِنَا مُحَمَّدٍ وَعَلَی اٰلِهِ وَاَصْحَبِهِ اَجْمَعِيْنَ, وَلَاحَوْلَاوَلَاقُوَّۃَاِلَّابِاللّٰهِ الْعَلِيِ الْعَظِيْمِ .اَمَّابَعْدُ
 
@@ -251,8 +261,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </a>
 <h class="animate__animated animate__rotateInUpLeft">
 <span class="text-1" class="multicolortext"  >
-LINTANG SONGO
+LINTANGSONGO
 </span>
+<span class="text-2">Copyright 2024</span>
 </h></div>
 
 
