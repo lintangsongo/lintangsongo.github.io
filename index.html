@@ -22,6 +22,68 @@ overflow: hidden;
 color: white;
 }
 
+.text-1 {
+animation: text1;
+background-image: linear-gradient(to right, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+
+}
+.text-2 {
+animation: text2;
+}
+.text-1,
+.text-2 {
+overflow: hidden;
+white-space: nowrap;
+display: inline-block;
+position: relative;
+animation-duration: 20s;
+animation-timing-function: steps(25, end);
+animation-iteration-count: infinite;
+}
+.text-1::after,
+.text-2::after {
+content: "|";
+position: absolute;
+right: 0;
+animation: caret infinite;
+animation-duration: 1s;
+animation-timing-function: steps(1, end);
+}
+@keyframes text2 {
+0%,
+50%,
+100% {
+width: 0;
+}
+60%,
+90% {
+width: 21.2em;
+}
+}
+@keyframes text1 {
+0%,
+50%,
+100% {
+width: 0;
+}
+10%,
+40% {
+width: 17em;
+}
+}
+@keyframes caret {
+0%,
+100% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+}
 .mew {
 position: relative;
 top: -webkit-calc(50% - 60px);
@@ -78,42 +140,43 @@ background-clip: text;
 color: transparent;
 }
 .lintangsongo {
-  animation: blinker 1s linear infinite;
+animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
-  50% {
-    opacity: 0;
-  }
+50% {
+opacity: 0;
+}
 }
 
 .footer-content-right {
-  padding-right:40px;
-  margin-top:20px;
-  float:right;
+padding-right:40px;
+margin-top:20px;
+float:right;
 }
 
 .icon-style {
-  height:40px;
-  margin-left:20px;
-  margin-top:5px;
+height:40px;
+margin-left:20px;
+margin-top:5px;
 }
 
 .icon-style:hover {
-  background-color:yellow;
-  padding:5px;
+background-color:yellow;
+padding:5px;
 }
 </style>
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 </head>
 <body>
+
 <div class="lintangsongo">
 <center>
 <a href="index.html">
-<img src="ico.png " alt="lintangsongo" class="rounded-circle" style="width: 100px; height: auto;">
+<img src="nu.png " alt="lintangsongo" class="rounded-circle" style="width: 100px; height: auto;">
 </a>
 </center></div>
 <div>
@@ -125,8 +188,10 @@ color: transparent;
 </h>
 <h class="animate__animated animate__flash">
 
-    محمد ﷺ            
+محمد ﷺ            
 </h>
+</center></div>
+<div>
 <h class="animate__animated animate__backInDown">
 
 ﷽
@@ -134,20 +199,25 @@ color: transparent;
 </center>
 </div>
 
-<div class="lintangsongo">
+<div>
 <center>
 <h class="animate__animated animate__slideInLeft">
 
-<span class="multicolortext" >
-    اللهم صل علي سيدنا محمدن النبي امي وعلي أله وصحبه وسلم
+<span class="multicolortext text-1">
+اللهم صل علي سيدنا محمدن النبي امي وعلي أله وصحبه وسلم
 </span>
+<span class="text-2">
+
+اَ لسَّلَامُ عَلَيْكُمْ وَرَحْمَۃُ اللهِ وَبَرَكَا تُهُ .اَلْحَمْدُ لِلّٰهِ رَبِّ اْلعَالَمِيْنَ وَالصَّلَاۃُ وَالسَّلَامُ عَلَی سَيِّدِنَا مُحَمَّدٍ وَعَلَی اٰلِهِ وَاَصْحَبِهِ اَجْمَعِيْنَ, وَلَاحَوْلَاوَلَاقُوَّۃَاِلَّابِاللّٰهِ الْعَلِيِ الْعَظِيْمِ .اَمَّابَعْدُ
+
+</span></h>
 </center>
 <center>
 <h class="animate__animated animate__zoomIn">
 
 <span>
 
- طَرِيْقَةِ
+طَرِيْقَةِ
 
 جَمْعِيَّةِ نَهْضَةِ العُلَمَاءِ
 
@@ -164,11 +234,23 @@ color: transparent;
 <span class='mew'>G</span>
 <span class='mew'>0</span>
 </center>
+
+" Kunci untuk mendapat berbagai keistimewaan itu adalah Istiqamah dalam Keimanan ""
 </h></div>
 
+
+
+
+
+
 <div class="footer-content-center">
+
+
+<a href="index.html">
+<img src="ico.png " alt="lintangsongo" class="rounded-circle" style="width: 100px; height: auto;">
+</a>
 <h class="animate__animated animate__rotateInUpLeft">
-<span class="multicolortext" >
+<span class="text-1" class="multicolortext"  >
 LINTANG SONGO
 </span>
 </h></div>
